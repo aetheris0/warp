@@ -1,83 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Warp Games</title>
-    <meta name="description" content="Warp Games — your game collection.">
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Warp Games</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="bg-glow"></div>
-
 <nav class="navbar">
-    <a href="index.html" class="brand">
-        WARP<span>GAMES</span>
-    </a>
+    <div class="brand">WARP</div>
 
     <div class="nav-links">
-        <a href="index.html" class="active">Home</a>
-        <a href="games.html">Games</a>
+        <a href="/" class="nav-btn active">Home</a>
+        <a href="/games.html" class="nav-btn">Games</a>
     </div>
+
+    <a href="/games.html" class="nav-play">Browse Games <span>→</span></a>
 </nav>
 
-<main class="hero">
 
-    <div class="hero-badge">
-        ✦ WARP GAMES
-    </div>
+<main>
 
-    <h1>
-        Games.<br>
-        <span>Warped.</span>
-    </h1>
+    <section class="hero">
 
-    <p>
-        A massive collection of games, all in one place.
-    </p>
+        <div class="status">
+            <span></span>
+            WARP GAMES • ONLINE
+        </div>
 
-    <div class="hero-buttons">
-        <a href="games.html" class="primary-btn">
-            Browse Games
-            <span>→</span>
-        </a>
+        <h1>WARP<br><span>GAMES</span></h1>
 
-        <a href="games.html" class="secondary-btn">
-            Explore
-        </a>
-    </div>
+        <p>
+            A massive collection of games, all in one place.
+            Fast, clean, and always growing.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="/games.html" class="primary-btn">
+                Browse Games
+                <span>→</span>
+            </a>
+
+            <a href="#popular" class="secondary-btn">
+                Popular Games
+            </a>
+        </div>
+
+    </section>
+
+
+    <section class="features">
+
+        <div class="feature">
+            <div class="feature-icon">✦</div>
+            <h3>Massive Library</h3>
+            <p>Hundreds of games in one sleek collection.</p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">ϟ</div>
+            <h3>Fast</h3>
+            <p>Built as a lightweight static website for quick loading.</p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">+</div>
+            <h3>Always Growing</h3>
+            <p>New games can easily be added to Warp.</p>
+        </div>
+
+    </section>
+
+
+    <section class="popular" id="popular">
+
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">FEATURED</span>
+                <h2>Popular Games</h2>
+            </div>
+
+            <a href="/games.html" class="view-all">
+                View all →
+            </a>
+        </div>
+
+        <div class="popular-grid">
+
+            <a href="/games/clbasketbros.html" class="popular-card">
+                <div class="game-letter">B</div>
+                <div>
+                    <strong>Basketball Bros</strong>
+                    <small>Sports • 🔥 Popular</small>
+                </div>
+                <span>→</span>
+            </a>
+
+            <a href="/games/clblockblast.html" class="popular-card">
+                <div class="game-letter">B</div>
+                <div>
+                    <strong>Block Blast</strong>
+                    <small>Puzzle • 🔥 Popular</small>
+                </div>
+                <span>→</span>
+            </a>
+
+            <a href="/games/clbloons.html" class="popular-card">
+                <div class="game-letter">B</div>
+                <div>
+                    <strong>Bloons</strong>
+                    <small>Strategy • 🔥 Popular</small>
+                </div>
+                <span>→</span>
+            </a>
+
+            <a href="/games/cl1v1lol.html" class="popular-card">
+                <div class="game-letter">1</div>
+                <div>
+                    <strong>1v1.lol</strong>
+                    <small>Action • 🔥 Popular</small>
+                </div>
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </section>
 
 </main>
 
-<section class="features">
-
-    <div class="feature-card">
-        <div class="feature-icon">✦</div>
-        <h3>Massive Library</h3>
-        <p>Way more games than the original Warp Google Sites version.</p>
-    </div>
-
-    <div class="feature-card">
-        <div class="feature-icon">⚡</div>
-        <h3>Fast</h3>
-        <p>Built as a lightweight static site for quick loading.</p>
-    </div>
-
-    <div class="feature-card">
-        <div class="feature-icon">◈</div>
-        <h3>Always Growing</h3>
-        <p>New games can easily be added to the collection.</p>
-    </div>
-
-</section>
 
 <footer>
-    <span>WARP GAMES</span>
-    <span>© 2026</span>
+    WARP GAMES © 2026
 </footer>
 
 </body>

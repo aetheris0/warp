@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Games — Warp Games</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="bg-glow"></div>
+
+<nav class="navbar">
+    <a href="index.html" class="brand">
+        WARP<span>GAMES</span>
+    </a>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="games.html" class="active">Games</a>
+    </div>
+</nav>
+
+<header class="games-header">
+
+    <div class="hero-badge">
+        ✦ GAME LIBRARY
+    </div>
+
+    <h1>Games</h1>
+
+    <p>
+        Find something to play.
+    </p>
+
+</header>
+
+<div class="game-tools">
+
+    <input
+        id="search"
+        type="text"
+        placeholder="Search games..."
+        autocomplete="off"
+    >
+
+    <div class="categories">
+
+        <button class="category active" data-category="all">
+            All
+        </button>
+
+        <button class="category" data-category="popular">
+            Popular
+        </button>
+
+        <button class="category" data-category="sports">
+            Sports
+        </button>
+
+        <button class="category" data-category="action">
+            Action
+        </button>
+
+        <button class="category" data-category="arcade">
+            Arcade
+        </button>
+
+        <button class="category" data-category="idle">
+            Idle
+        </button>
+
+        <button class="category" data-category="puzzle">
+            Puzzle
+        </button>
+
+    </div>
+
+</div>
+
+<main id="games" class="games-grid"></main>
+
+<div id="no-results" class="no-results">
+    No games found.
+</div>
+
+<footer>
+    <span>WARP GAMES</span>
+    <span>© 2026</span>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,19 +1,9 @@
 /*
 =========================================================
                     WARP GAMES
-                  GAME LIBRARY
-=========================================================
-
-Only games from the files you provided are included.
-SVG entries from the GitHub file list are ignored.
-Games are automatically sorted A-Z.
+                 GAME LIBRARY SCRIPT
 =========================================================
 */
-
-
-/* =========================================================
-   GAME FILES
-   ========================================================= */
 
 const gameFiles = [
 
@@ -219,7 +209,7 @@ const gameFiles = [
     "clcommandandconquer.html",
     "clcommanderkeen5.html",
 
-    /* Extra B files from your latest paste */
+    /* EXTRA FILES */
 
     "clb3313unabandonedA2.html",
     "clb3313v102.html",
@@ -231,8 +221,8 @@ const gameFiles = [
 
 
 /* =========================================================
-   GAME NAME OVERRIDES
-   ========================================================= */
+   DISPLAY NAME OVERRIDES
+========================================================= */
 
 const nameOverrides = {
 
@@ -262,7 +252,6 @@ const nameOverrides = {
 
     "cl12minibattles.html": "12 MiniBattles",
     "cl13bones.html": "13 Bones",
-
     "cl20smallmazes.html": "20 Small Mazes",
     "cl40xescape.html": "40xEscape",
 
@@ -275,7 +264,6 @@ const nameOverrides = {
     "cl99nightsitf.html": "99 Nights",
     "cl100in1nes.html": "100-in-1 NES",
     "cl100RoomsOfEnemies.html": "100 Rooms of Enemies",
-
     "cl1942nes.html": "1942 NES",
     "cl2048.html": "2048",
     "cl2048cupcakes.html": "2048 Cupcakes",
@@ -283,507 +271,247 @@ const nameOverrides = {
     "cl500calibercontractz.html": "500 Caliber Contractz",
     "cl9007199254740992.html": "9007199254740992",
 
-    "clA Walk in The Forest (v1.0).html":
-        "A Walk in The Forest (V1.0)",
-
-    "clA Walk in The Forest (v10).html":
-        "A Walk in The Forest (V10)",
-
-    "clAcko_s Mach Bike Challenge (v1.0).html":
-        "Acko's Mach Bike Challenge (V1.0)",
-
-    "clAcko_s Mach Bike Challenge (v10).html":
-        "Acko's Mach Bike Challenge (V10)",
-
-    "clADarkRoom.html":
-        "A Dark Room",
-
-    "clADOFAI.html":
-        "A Dance of Fire and Ice",
-
-    "clabandoned3.html":
-        "Abandoned 3",
-
-    "clabsolutemadness.html":
-        "Absolute Madness",
-
-    "clacecombat2.html":
-        "Ace Combat 2",
-
-    "clacecombat3.html":
-        "Ace Combat 3",
-
-    "clacegangstertaxi.html":
-        "Ace Gangster Taxi",
-
-    "claceattorneymilesedgeworth.html":
-        "Ace Attorney: Miles Edgeworth",
-
-    "clachievementunlocked.html":
-        "Achievement Unlocked",
-
-    "clachievmentunlocked.html":
-        "Achievement Unlocked",
-
-    "clachievmentunlocked2.html":
-        "Achievement Unlocked 2",
-
-    "clachievmentunlocked3.html":
-        "Achievement Unlocked 3",
-
-    "clachillies.html":
-        "Achillies",
-
-    "clachillies2.html":
-        "Achillies 2",
-
-    "cladatewithdeath.html":
-        "A Date with Death",
-
-    "cladayintheoffice.html":
-        "A Day in the Office",
-
-    "cladvancewars.html":
-        "Advance Wars",
-
-    "cladvancewars2.html":
-        "Advance Wars 2",
-
-    "cladvancewarsdualstrike.html":
-        "Advance Wars: Dual Strike",
-
-    "cladventneon.html":
-        "Advent Neon",
-
-    "cladventurecapitalist.html":
-        "Adventure Capitalist",
-
-    "clAdventureCapatalist.html":
-        "Adventure Capitalist",
-
-    "claftertheweek.html":
-        "After the Week",
-
-    "clagariolite.html":
-        "Agar.io Lite",
-
-    "clageofwar.html":
-        "Age of War",
-
-    "clageofwar2.html":
-        "Age of War 2",
-
-    "clagesofconflict.html":
-        "Ages of Conflict",
-
-    "clagesofempire.html":
-        "Ages of Empire",
-
-    "clahoysurvival.html":
-        "Ahoy Survival",
-
-    "clai.html":
-        "AI",
-
-    "clairlinetycoonidle.html":
-        "Airline Tycoon Idle",
-
-    "claflac.html":
-        "Aflac",
-
-    "clakoopasrevenge.html":
-        "A Koopa's Revenge",
-
-    "clakoopasrevenge2.html":
-        "A Koopa's Revenge 2",
-
-    "clakumanorgaiden.html":
-        "Akumano Gaiden",
-
-    "clalexkiddinmiracleworld.html":
-        "Alex Kidd in Miracle World",
-
-    "claladdinsnes.html":
-        "Aladdin NES",
-
-    "clalienhominid.html":
-        "Alien Hominid",
-
-    "clalienhominidgba.html":
-        "Alien Hominid GBA",
-
-    "clalienskyinvasion.html":
-        "Alien Sky Invasion",
-
-    "clalientransporter.html":
-        "Alien Transporter",
-
-    "clalienvspredator.html":
-        "Alien vs Predator",
-
-    "clallbossesin1.html":
-        "All Bosses in 1",
-
-    "clallocation.html":
-        "Allocation",
-
-    "clAltered Beast.html":
-        "Altered Beast",
-
-    "clamaze.html":
-        "Amaze",
-
-    "clambulencearush.html":
-        "Ambulance Rush",
-
-    "clamidstthesky.html":
-        "Amidst the Sky",
-
-    "clamigopancho.html":
-        "Amigo Pancho",
-
-    "capuchinsf.html":
-        "Capuchin's SF",
-
-    "clbackyardbaseball.html":
-        "Backyard Baseball",
-
-    "clbaconmaydie.html":
-        "Bacon May Die",
-
-    "clbadpiggieslatest.html":
-        "Bad Piggies",
-
-    "clbaldisbasicsremaster.html":
-        "Baldi's Basics Remastered",
-
-    "clballsandbricks.html":
-        "Balls and Bricks",
-
-    "clballz.html":
-        "Ballz",
-
-    "clbanbuds.html":
-        "Banbuds",
-
-    "clBank Robbery.html":
-        "Bank Robbery",
-
-    "clbankbreakout2.html":
-        "Bank Breakout 2",
-
-    "clbankrobbery2.html":
-        "Bank Robbery 2",
-
-    "clbaseballnes.html":
-        "Baseball NES",
-
-    "clbasketbros.html":
-        "Basket Bros",
-
-    "clbasketrandomgood.html":
-        "Basket Random",
-
-    "clbattlesim.html":
-        "Battle Sim",
-
-    "clbballlegend.html":
-        "B-Ball Legend",
-
-    "clbeamrider.html":
-        "Beam Rider",
-
-    "clbearbarians.html":
-        "Bearbarians",
-
-    "clben10omniverse.html":
-        "Ben 10 Omniverse",
-
-    "clben10protector.html":
-        "Ben 10 Protector",
-
-    "clben10racing.html":
-        "Ben 10 Racing",
-
-    "clbendrowned.html":
-        "Ben Drowned",
-
-    "clBig_Time_Butter_Baron.html":
-        "Big Time Butter Baron",
-
-    "clbigneontowertinysquare.html":
-        "Big NEON Tower Tiny Square",
-
-    "clbigtowertinysquare2.html":
-        "Big Tower Tiny Square 2",
-
-    "clbindingofisaccsheeptime.html":
-        "The Binding of Isaac: Sheep Time",
-
-    "clbitlife.html":
-        "BitLife",
-
-    "clbitplanes.html":
-        "Bit Planes",
-
-    "clblastronaut.html":
-        "Blastronaut",
-
-    "clblightborne.html":
-        "Blightborne",
-
-    "clblobsstory2.html":
-        "Blob's Story 2",
-
-    "clblockblast.html":
-        "Block Blast",
-
-    "clblockblastv2.html":
-        "Block Blast V2",
-
-    "clblockcraftparkour.html":
-        "Block Craft Parkour",
-
-    "clblockcraftshooter.html":
-        "Block Craft Shooter",
-
-    "clbloons.html":
-        "Bloons",
-
-    "clbloons2.html":
-        "Bloons 2",
-
-    "clbloonspp1.html":
-        "Bloons Player Pack 1",
-
-    "clbloonspp2.html":
-        "Bloons Player Pack 2",
-
-    "clbloonspp4.html":
-        "Bloons Player Pack 4",
-
-    "clbloonsTD1.html":
-        "Bloons TD",
-
-    "clblumgiracers.html":
-        "Blumgi Racers",
-
-    "clBMX2.html":
-        "BMX 2",
-
-    "clbollybeat.html":
-        "Bolly Beat",
-
-    "clbomberman2.html":
-        "Bomberman 2",
-
-    "clBonanza-Bros.html":
-        "Bonanza Bros",
-
-    "clboomslingers.html":
-        "Boom Slingers",
-
-    "clbotwds.html":
-        "BOTW DS",
-
-    "clbowlalt.html":
-        "Bowl Alt",
-
-    "clboxinglive2.html":
-        "Boxing Live 2",
-
-    "clboxingrandom.html":
-        "Boxing Random",
-
-    "clBTD1.html":
-        "BTD1",
-
-    "clbtts.html":
-        "Bloons Tower Defense",
-
-    "clbtts2.html":
-        "Bloons Tower Defense 2",
-
-    "clbubbletanks.html":
-        "Bubble Tanks",
-
-    "clbubbletanks2.html":
-        "Bubble Tanks 2",
-
-    "clbubbletanksarenas.html":
-        "Bubble Tanks Arenas",
-
-    "clbubsy.html":
-        "Bubsy",
-
-    "clburritobison.html":
-        "Burrito Bison",
-
-    "clbushidoblade.html":
-        "Bushido Blade",
-
-    "clb3313unabandonedA2.html":
-        "B3313 Unabandoned A2",
-
-    "clb3313v102.html":
-        "B3313 V1.0.2",
-
-    "clbabychiccoadventure.html":
-        "Baby Chicco Adventure",
-
-    "clbabykaizo.html":
-        "Baby Kaizo",
-
-    "clbabysniperinvietnam.html":
-        "Baby Sniper in Vietnam",
-
-    "clcallofbattle.html":
-        "Call of Battle",
-
-    "clcapybaraclicker.html":
-        "Capybara Clicker",
-
-    "clcardrawing.html":
-        "Car Drawing",
-
-    "clCartoonNetworkTableTennisUltimateTournament.html":
-        "Cartoon Network Table Tennis Ultimate Tournament",
-
-    "clcastlevania.html":
-        "Castlevania",
-
-    "clcastlevaniaariaofsorrow.html":
-        "Castlevania: Aria of Sorrow",
-
-    "clcatmario.html":
-        "Cat Mario",
-
-    "clcatmariogood.html":
-        "Cat Mario Good",
-
-    "clcavecrawler.html":
-        "Cave Crawler",
-
-    "clceleste.html":
-        "Celeste",
-
-    "clcelestemariodx.html":
-        "Celeste Mario DX",
-
-    "clCeliasStupidROMHack.html":
-        "Celia's Stupid ROM Hack",
-
-    "clcentipedearcade.html":
-        "Centipede Arcade",
-
-    "clchainofmemories.html":
-        "Chain of Memories",
-
-    "clchaosfaction2.html":
-        "Chaos Faction 2",
-
-    "clcheshireinachatroom.html":
-        "Cheshire in a Chatroom",
-
-    "clchibiknight.html":
-        "Chibi Knight",
-
-    "clchickenwar.html":
-        "Chicken War",
-
-    "clchoppyorc.html":
-        "Choppy Orc",
-
-    "clchuzzle.html":
-        "Chuzzle",
-
-    "clCircloO2.html":
-        "CircloO 2",
-
-    "clclashofvikings.html":
-        "Clash of Vikings",
-
-    "clclayuncraft.html":
-        "Clay Uncraft",
-
-    "clclearvision.html":
-        "Clear Vision",
-
-    "clclearvision2.html":
-        "Clear Vision 2",
-
-    "clclearvision4.html":
-        "Clear Vision 4",
-
-    "clclearvision5.html":
-        "Clear Vision 5",
-
-    "clclucluland.html":
-        "Cluclu Land",
-
-    "clcod4.html":
-        "COD 4",
-
-    "clcodblackopp.html":
-        "COD Black Ops",
-
-    "clcodercraft.html":
-        "CoderCraft",
-
-    "clcoldpines.html":
-        "Cold Pines",
-
-    "clcolorwatersort3d.html":
-        "Color Water Sort 3D",
-
-    "clcombopool.html":
-        "Combo Pool",
-
-    "clcommandandconquer.html":
-        "Command & Conquer",
-
-    "clcommanderkeen5.html":
-        "Commander Keen 5"
+    "clA Walk in The Forest (v1.0).html": "A Walk in The Forest (V1.0)",
+    "clA Walk in The Forest (v10).html": "A Walk in The Forest (V10)",
+    "clAcko_s Mach Bike Challenge (v1.0).html": "Acko's Mach Bike Challenge (V1.0)",
+    "clAcko_s Mach Bike Challenge (v10).html": "Acko's Mach Bike Challenge (V10)",
+
+    "clADarkRoom.html": "A Dark Room",
+    "clADOFAI.html": "A Dance of Fire and Ice",
+    "clabandoned3.html": "Abandoned 3",
+    "clabsolutemadness.html": "Absolute Madness",
+    "claceattorneymilesedgeworth.html": "Ace Attorney: Miles Edgeworth",
+    "clacecombat2.html": "Ace Combat 2",
+    "clacecombat3.html": "Ace Combat 3",
+    "clacegangstertaxi.html": "Ace Gangster Taxi",
+    "clachievementunlocked.html": "Achievement Unlocked",
+    "clachievmentunlocked.html": "Achievement Unlocked",
+    "clachievmentunlocked2.html": "Achievement Unlocked 2",
+    "clachievmentunlocked3.html": "Achievement Unlocked 3",
+    "clachillies.html": "Achillies",
+    "clachillies2.html": "Achillies 2",
+    "cladatewithdeath.html": "A Date with Death",
+    "cladayintheoffice.html": "A Day in the Office",
+    "cladvancewars.html": "Advance Wars",
+    "cladvancewars2.html": "Advance Wars 2",
+    "cladvancewarsdualstrike.html": "Advance Wars: Dual Strike",
+    "cladventneon.html": "Advent Neon",
+    "cladventurecapitalist.html": "Adventure Capitalist",
+    "clAdventureCapatalist.html": "Adventure Capitalist",
+    "claftertheweek.html": "After the Week",
+    "clagariolite.html": "Agar.io Lite",
+    "clageofwar.html": "Age of War",
+    "clageofwar2.html": "Age of War 2",
+    "clagesofconflict.html": "Ages of Conflict",
+    "clagesofempire.html": "Ages of Empire",
+    "clahoysurvival.html": "Ahoy Survival",
+    "clai.html": "AI",
+    "clairlinetycoonidle.html": "Airline Tycoon Idle",
+    "claflac.html": "Aflac",
+    "clakoopasrevenge.html": "A Koopa's Revenge",
+    "clakoopasrevenge2.html": "A Koopa's Revenge 2",
+    "clakumanorgaiden.html": "Akumano Gaiden",
+    "clalexkiddinmiracleworld.html": "Alex Kidd in Miracle World",
+    "claladdinsnes.html": "Aladdin NES",
+    "clalienhominid.html": "Alien Hominid",
+    "clalienhominidgba.html": "Alien Hominid GBA",
+    "clalienskyinvasion.html": "Alien Sky Invasion",
+    "clalientransporter.html": "Alien Transporter",
+    "clalienvspredator.html": "Alien vs Predator",
+    "clallbossesin1.html": "All Bosses in 1",
+    "clallocation.html": "Allocation",
+    "clAltered Beast.html": "Altered Beast",
+    "clamaze.html": "Amaze",
+    "clambulencearush.html": "Ambulance Rush",
+    "clamidstthesky.html": "Amidst the Sky",
+    "clamigopancho.html": "Amigo Pancho",
+    "capuchinsf.html": "Capuchin's SF",
+
+    "clbackyardbaseball.html": "Backyard Baseball",
+    "clbaconmaydie.html": "Bacon May Die",
+    "clbadpiggieslatest.html": "Bad Piggies",
+    "clbaldisbasicsremaster.html": "Baldi's Basics Remastered",
+    "clballsandbricks.html": "Balls and Bricks",
+    "clballz.html": "Ballz",
+    "clbanbuds.html": "Banbuds",
+    "clBank Robbery.html": "Bank Robbery",
+    "clbankbreakout2.html": "Bank Breakout 2",
+    "clbankrobbery2.html": "Bank Robbery 2",
+    "clbaseballnes.html": "Baseball NES",
+    "clbasketbros.html": "Basket Bros",
+    "clbasketrandomgood.html": "Basket Random",
+    "clbattlesim.html": "Battle Sim",
+    "clbballlegend.html": "B-Ball Legend",
+    "clbeamrider.html": "Beam Rider",
+    "clbearbarians.html": "Bearbarians",
+    "clben10omniverse.html": "Ben 10 Omniverse",
+    "clben10protector.html": "Ben 10 Protector",
+    "clben10racing.html": "Ben 10 Racing",
+    "clbendrowned.html": "Ben Drowned",
+    "clBig_Time_Butter_Baron.html": "Big Time Butter Baron",
+    "clbigneontowertinysquare.html": "Big NEON Tower Tiny Square",
+    "clbigtowertinysquare2.html": "Big Tower Tiny Square 2",
+    "clbindingofisaccsheeptime.html": "The Binding of Isaac: Sheep Time",
+    "clbitlife.html": "BitLife",
+    "clbitplanes.html": "Bit Planes",
+    "clblastronaut.html": "Blastronaut",
+    "clblightborne.html": "Blightborne",
+    "clblobsstory2.html": "Blob's Story 2",
+    "clblockblast.html": "Block Blast",
+    "clblockblastv2.html": "Block Blast V2",
+    "clblockcraftparkour.html": "Block Craft Parkour",
+    "clblockcraftshooter.html": "Block Craft Shooter",
+    "clbloons.html": "Bloons",
+    "clbloons2.html": "Bloons 2",
+    "clbloonspp1.html": "Bloons Player Pack 1",
+    "clbloonspp2.html": "Bloons Player Pack 2",
+    "clbloonspp4.html": "Bloons Player Pack 4",
+    "clbloonsTD1.html": "Bloons TD",
+    "clblumgiracers.html": "Blumgi Racers",
+    "clBMX2.html": "BMX 2",
+    "clbollybeat.html": "Bolly Beat",
+    "clbomberman2.html": "Bomberman 2",
+    "clBonanza-Bros.html": "Bonanza Bros",
+    "clboomslingers.html": "Boom Slingers",
+    "clbotwds.html": "BOTW DS",
+    "clbowlalt.html": "Bowl Alt",
+    "clboxinglive2.html": "Boxing Live 2",
+    "clboxingrandom.html": "Boxing Random",
+    "clBTD1.html": "BTD1",
+    "clbtts.html": "Bloons Tower Defense",
+    "clbtts2.html": "Bloons Tower Defense 2",
+    "clbubbletanks.html": "Bubble Tanks",
+    "clbubbletanks2.html": "Bubble Tanks 2",
+    "clbubbletanksarenas.html": "Bubble Tanks Arenas",
+    "clbubsy.html": "Bubsy",
+    "clburritobison.html": "Burrito Bison",
+    "clbushidoblade.html": "Bushido Blade",
+
+    "clb3313unabandonedA2.html": "B3313 Unabandoned A2",
+    "clb3313v102.html": "B3313 V1.0.2",
+    "clbabychiccoadventure.html": "Baby Chicco Adventure",
+    "clbabykaizo.html": "Baby Kaizo",
+    "clbabysniperinvietnam.html": "Baby Sniper in Vietnam",
+
+    "clcallofbattle.html": "Call of Battle",
+    "clcapybaraclicker.html": "Capybara Clicker",
+    "clcardrawing.html": "Car Drawing",
+    "clCartoonNetworkTableTennisUltimateTournament.html": "Cartoon Network Table Tennis Ultimate Tournament",
+    "clcastlevania.html": "Castlevania",
+    "clcastlevaniaariaofsorrow.html": "Castlevania: Aria of Sorrow",
+    "clcatmario.html": "Cat Mario",
+    "clcatmariogood.html": "Cat Mario Good",
+    "clcavecrawler.html": "Cave Crawler",
+    "clceleste.html": "Celeste",
+    "clcelestemariodx.html": "Celeste Mario DX",
+    "clCeliasStupidROMHack.html": "Celia's Stupid ROM Hack",
+    "clcentipedearcade.html": "Centipede Arcade",
+    "clchainofmemories.html": "Chain of Memories",
+    "clchaosfaction2.html": "Chaos Faction 2",
+    "clcheshireinachatroom.html": "Cheshire in a Chatroom",
+    "clchibiknight.html": "Chibi Knight",
+    "clchickenwar.html": "Chicken War",
+    "clchoppyorc.html": "Choppy Orc",
+    "clchuzzle.html": "Chuzzle",
+    "clCircloO2.html": "CircloO 2",
+    "clclashofvikings.html": "Clash of Vikings",
+    "clclayuncraft.html": "Clay Uncraft",
+    "clclearvision.html": "Clear Vision",
+    "clclearvision2.html": "Clear Vision 2",
+    "clclearvision4.html": "Clear Vision 4",
+    "clclearvision5.html": "Clear Vision 5",
+    "clclucluland.html": "Cluclu Land",
+    "clcod4.html": "COD 4",
+    "clcodblackopp.html": "COD Black Ops",
+    "clcodercraft.html": "CoderCraft",
+    "clcoldpines.html": "Cold Pines",
+    "clcolorwatersort3d.html": "Color Water Sort 3D",
+    "clcombopool.html": "Combo Pool",
+    "clcommandandconquer.html": "Command & Conquer",
+    "clcommanderkeen5.html": "Commander Keen 5"
 
 };
 
 
 /* =========================================================
-   NAME GENERATOR
-   ========================================================= */
+   CREATE GAME OBJECTS
+========================================================= */
 
-function getGameName(file) {
+const games = gameFiles.map(file => {
+
+    let name;
 
     if (nameOverrides[file]) {
-        return nameOverrides[file];
+
+        name = nameOverrides[file];
+
+    } else {
+
+        name = file
+            .replace(/^cl/i, "")
+            .replace(/\.html$/i, "")
+            .replace(/([a-z])([A-Z])/g, "$1 $2")
+            .replace(/[_-]+/g, " ")
+            .replace(/\s+/g, " ")
+            .trim();
+
+        name = name.replace(/\b\w/g, c => c.toUpperCase());
+
     }
 
-    let name = file
-        .replace(/^cl/i, "")
-        .replace(/\.html$/i, "");
+    return {
+        name,
+        file,
+        category: getCategory(name)
+    };
 
-    name = name
-        .replace(/([a-z])([A-Z])/g, "$1 $2")
-        .replace(/[_-]+/g, " ")
-        .replace(/\s+/g, " ")
-        .trim();
+});
 
-    return name.replace(/\b\w/g, char =>
-        char.toUpperCase()
-    );
-}
+
+/* =========================================================
+   REMOVE DUPLICATES
+========================================================= */
+
+const uniqueGames = [];
+
+const seenFiles = new Set();
+
+games.forEach(game => {
+
+    if (!seenFiles.has(game.file)) {
+
+        seenFiles.add(game.file);
+
+        uniqueGames.push(game);
+
+    }
+
+});
+
+
+/* =========================================================
+   SORT A-Z
+========================================================= */
+
+uniqueGames.sort((a, b) =>
+    a.name.localeCompare(
+        b.name,
+        undefined,
+        {
+            numeric: true,
+            sensitivity: "base"
+        }
+    )
+);
 
 
 /* =========================================================
    CATEGORY DETECTION
-   ========================================================= */
+========================================================= */
 
 function getCategory(name) {
 
     const n = name.toLowerCase();
-
-
-    /* SPORTS */
 
     if (
         n.includes("baseball") ||
@@ -800,9 +528,6 @@ function getCategory(name) {
         return "sports";
     }
 
-
-    /* PUZZLE */
-
     if (
         n.includes("2048") ||
         n.includes("maze") ||
@@ -814,9 +539,6 @@ function getCategory(name) {
         return "puzzle";
     }
 
-
-    /* IDLE */
-
     if (
         n.includes("clicker") ||
         n.includes("idle") ||
@@ -826,9 +548,6 @@ function getCategory(name) {
     ) {
         return "idle";
     }
-
-
-    /* SHOOTER */
 
     if (
         n.includes("doom") ||
@@ -842,9 +561,6 @@ function getCategory(name) {
         return "shooter";
     }
 
-
-    /* SURVIVAL */
-
     if (
         n.includes("survival") ||
         n.includes("nights") ||
@@ -852,9 +568,6 @@ function getCategory(name) {
     ) {
         return "survival";
     }
-
-
-    /* ARCADE */
 
     if (
         n.includes("arcade") ||
@@ -865,69 +578,13 @@ function getCategory(name) {
         return "arcade";
     }
 
-
     return "action";
 }
 
 
 /* =========================================================
-   BUILD GAME DATABASE
-   ========================================================= */
-
-const games = gameFiles.map(file => {
-
-    const name = getGameName(file);
-
-    return {
-        name: name,
-        file: file,
-        category: getCategory(name),
-        popular: false
-    };
-
-});
-
-
-/* =========================================================
-   REMOVE DUPLICATE FILES
-   ========================================================= */
-
-const uniqueGames = [];
-
-const seen = new Set();
-
-games.forEach(game => {
-
-    if (!seen.has(game.file)) {
-
-        seen.add(game.file);
-
-        uniqueGames.push(game);
-
-    }
-
-});
-
-
-/* =========================================================
-   SORT A-Z
-   ========================================================= */
-
-uniqueGames.sort((a, b) =>
-    a.name.localeCompare(
-        b.name,
-        undefined,
-        {
-            numeric: true,
-            sensitivity: "base"
-        }
-    )
-);
-
-
-/* =========================================================
-   ELEMENTS
-   ========================================================= */
+   DOM
+========================================================= */
 
 const gameContainer =
     document.getElementById("games");
@@ -938,6 +595,9 @@ const searchInput =
 const noResults =
     document.getElementById("no-results");
 
+const gameCount =
+    document.getElementById("game-count");
+
 const categoryButtons =
     document.querySelectorAll(".category");
 
@@ -946,22 +606,43 @@ let currentCategory = "all";
 
 
 /* =========================================================
-   RENDER GAMES
-   ========================================================= */
+   WARP GAME COUNTER
+========================================================= */
+
+function updateGameCount(count = uniqueGames.length) {
+
+    if (!gameCount) return;
+
+    if (count === uniqueGames.length) {
+
+        gameCount.innerHTML = `
+            <span class="count-number">${uniqueGames.length}</span>
+            <span class="count-text">games available</span>
+        `;
+
+    } else {
+
+        gameCount.innerHTML = `
+            <span class="count-number">${count}</span>
+            <span class="count-text">games found</span>
+        `;
+
+    }
+
+}
+
+
+/* =========================================================
+   RENDER
+========================================================= */
 
 function renderGames() {
 
-    if (!gameContainer) {
-        return;
-    }
+    if (!gameContainer) return;
 
-
-    const query =
-        searchInput
-            ? searchInput.value
-                .toLowerCase()
-                .trim()
-            : "";
+    const query = searchInput
+        ? searchInput.value.toLowerCase().trim()
+        : "";
 
 
     const filteredGames =
@@ -972,11 +653,9 @@ function renderGames() {
                     .toLowerCase()
                     .includes(query);
 
-
             const matchesCategory =
                 currentCategory === "all" ||
                 game.category === currentCategory;
-
 
             return (
                 matchesSearch &&
@@ -989,36 +668,40 @@ function renderGames() {
     gameContainer.innerHTML = "";
 
 
-    filteredGames.forEach(game => {
+    filteredGames.forEach((game, index) => {
 
         const card =
             document.createElement("a");
 
+        card.className = "game-card";
 
-        card.className =
-            "game-card";
+        card.href = game.file;
 
-
-        card.href =
-            game.file;
+        card.style.animationDelay =
+            `${Math.min(index * 0.025, 0.4)}s`;
 
 
         card.innerHTML = `
+            <div class="game-card-inner">
 
-            <div class="game-name">
-                ${escapeHTML(game.name)}
+                <div class="game-name">
+                    ${escapeHTML(game.name)}
+                </div>
+
+                <div class="game-arrow">
+                    →
+                </div>
+
             </div>
-
-            <div class="game-category">
-                ${escapeHTML(game.category)}
-            </div>
-
         `;
 
 
         gameContainer.appendChild(card);
 
     });
+
+
+    updateGameCount(filteredGames.length);
 
 
     if (noResults) {
@@ -1034,24 +717,8 @@ function renderGames() {
 
 
 /* =========================================================
-   HTML ESCAPE
-   ========================================================= */
-
-function escapeHTML(text) {
-
-    return String(text)
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
-
-}
-
-
-/* =========================================================
    SEARCH
-   ========================================================= */
+========================================================= */
 
 if (searchInput) {
 
@@ -1065,7 +732,7 @@ if (searchInput) {
 
 /* =========================================================
    CATEGORY BUTTONS
-   ========================================================= */
+========================================================= */
 
 categoryButtons.forEach(button => {
 
@@ -1084,7 +751,7 @@ categoryButtons.forEach(button => {
 
 
             currentCategory =
-                button.dataset.category;
+                button.dataset.category || "all";
 
 
             renderGames();
@@ -1096,16 +763,39 @@ categoryButtons.forEach(button => {
 
 
 /* =========================================================
-   INITIAL LOAD
-   ========================================================= */
+   ESCAPE HTML
+========================================================= */
+
+function escapeHTML(text) {
+
+    return String(text)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+
+}
+
+
+/* =========================================================
+   INITIALIZE
+========================================================= */
+
+updateGameCount();
 
 renderGames();
 
 
 /* =========================================================
-   OPTIONAL DEBUG INFO
-   ========================================================= */
+   WARP CONSOLE INFO
+========================================================= */
 
 console.log(
-    `Warp Games loaded ${uniqueGames.length} games.`
+    `%c WARP GAMES `,
+    "font-weight:bold;font-size:16px;"
+);
+
+console.log(
+    `Loaded ${uniqueGames.length} games.`
 );
